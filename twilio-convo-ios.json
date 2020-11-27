@@ -1,4 +1,5 @@
 {
   "1.0.0": "https://github.com/twilio/conversations-ios/releases/download/v1.0.0/TwilioConversationsClient.framework.zip",
-  "1.1.0": "https://github.com/twilio/conversations-ios/releases/download/v1.1.0/TwilioConversationsClient.framework.zip"
+  "1.1.0": "https://github.com/twilio/conversations-ios/releases/download/v1.1.0/TwilioConversationsClient.framework.zip",
+  "1.1.1": "https://github.com/twilio/conversations-ios/releases/download/v1.1.1/TwilioConversationsClient.framework.zip"
 }
