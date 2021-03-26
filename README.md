@@ -29,7 +29,7 @@ source 'https://github.com/CocoaPods/Specs'
 platform :ios, '11.0'
 
 target 'TARGET_NAME' do
-    pod 'TwilioConversationsClient', '~> 4.2'
+    pod 'TwilioConversationsClient', '~> 1.3'
 end
 ```
 
