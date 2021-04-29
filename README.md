@@ -2,6 +2,10 @@
 
 This repository contains releases for the Twilio Conversations for iOS SDK. These releases can be consumed using Swift Package Manager, CocoaPods or manual integration into your project.
 
+### Mac Catalyst Pilot
+
+If you are interested in Mac Catalyst support please contact support.
+
 ### Swift Package Manager
 
 You can add Conversations Client for iOS by adding the `https://github.com/twilio/conversations-ios` repository as a Swift Package.
