@@ -4,7 +4,7 @@ This repository contains releases for the Twilio Conversations for iOS SDK. Thes
 
 ### Mac Catalyst Pilot
 
-If you are interested in Mac Catalyst support please contact support.
+If you are interested in Mac Catalyst support please [contact support](#issues-and-support).
 
 ### Swift Package Manager
 
