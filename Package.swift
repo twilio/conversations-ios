@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "TwilioConversationsClient",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v12)
     ],
     products: [
         .library(
@@ -14,8 +14,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "TwilioConversationsClient",
-            url: "https://media.twiliocdn.com/sdk/ios/conversations/releases/2.0.0/twilio-conversations-ios-2.0.0.zip",
-            checksum: "5becd6a60b0c8a3cccfff015a12b44dee66096a075c7c213ff3968cebc60b462"
+            url: "https://media.twiliocdn.com/sdk/ios/conversations/releases/2.0.1/twilio-conversations-ios-2.0.1.zip",
+            checksum: "d4c5f52072edcbb0e6f1b96c946c565b8196d669a60703da6763bf299957d8eb"
         )
     ]
 )
