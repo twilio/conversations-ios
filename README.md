@@ -30,7 +30,7 @@ We support integration using CocoaPods as well. You can add Twilio Conversations
 ```ruby
 source 'https://github.com/CocoaPods/Specs'
 
-platform :ios, '11.0'
+platform :ios, '12.0'
 
 target 'TARGET_NAME' do
     pod 'TwilioConversationsClient', '~> 1.3'
