@@ -14,8 +14,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "TwilioConversationsClient",
-            url: "https://media.twiliocdn.com/sdk/ios/conversations/releases/2.2.0/twilio-conversations-ios-2.2.0.zip",
-            checksum: "b7812b0c61b141d27d5e92885f98fc84c1ab31c652b82088e6d30953ba655f2e"
+            url: "https://media.twiliocdn.com/sdk/ios/conversations/releases/2.2.1/twilio-conversations-ios-2.2.1.zip",
+            checksum: "5bec7f7f1785427d2db5eb14d6fad1c9397ec38e032e87dfd243d2d2fc4f87bf"
         )
     ]
 )
