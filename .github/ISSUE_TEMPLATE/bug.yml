@@ -1,6 +1,6 @@
 name: Bug
 description: File a Twilio Conversations iOS SDK bug report
-title: "[Bug]: [FILL IN DETAILS]"
+title: "Bug: [PROVIDE A SHORT SUMMARY]"
 labels: ["bug", "triage"]
 assignees:
   - berkus
