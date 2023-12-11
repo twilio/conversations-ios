@@ -1,6 +1,6 @@
 ---
 name: Bug
-description: File a Twilio Conversations iOS SDK bug report
+about: File a Twilio Conversations iOS SDK bug report
 title: "Bug report [FILL IN DETAILS]"
 labels: bug
 assignees: berkus
