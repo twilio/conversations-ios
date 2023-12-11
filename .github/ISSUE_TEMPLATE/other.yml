@@ -1,0 +1,36 @@
+name: Other
+description: File a Twilio Conversations iOS SDK question, comment or feedback
+title: "Other: [PROVIDE A SHORT SUMMARY]"
+labels: ["category:question", "disposition:triage"]
+assignees:
+  - berkus
+body:
+  - type: input
+    id: version
+    attributes:
+      label: SDK version
+      description: Version of Conversations SDK where this bug reproduces, could be multiple versions, comma-separated
+      placeholder: "[ENTER SDK VERSION HERE]"
+    validations:
+      required: false
+  - type: input
+    id: model
+    attributes:
+      label: Device model
+      description: Model of iOS or Mac device where this issue reproduces
+      placeholder: "[ENTER iPhone/iPad/Mac MODEL HERE]"
+    validations:
+      required: false
+  - type: input
+    id: os
+    attributes:
+      label: OS version
+      description: Version of operating system where this issue reproduces
+      placeholder: "[ENTER YOUR DEVICE IOS VERSION HERE/OSX VERSION FOR Mac]"
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: Description/question
+      placeholder: Write your feedback here.
