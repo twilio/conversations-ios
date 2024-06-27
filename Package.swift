@@ -15,7 +15,7 @@ let package = Package(
         .package(
             name: "TwilioTwilsockLib",
             url: "https://github.com/twilio/twilsock-ios",
-            .upToNextMajor(from: "2.0.4"))
+            .exactItem("2.1.1"))
     ],
     targets: [
         .target(
@@ -28,8 +28,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "TwilioConversationsClient",
-            url: "https://sdk.twilio.com/ios/conversations/releases/4.0.3/twilio-conversations-ios-4.0.3.zip",
-            checksum: "967e76057156e512a73a3eea8b50f24a1989ae41fd3b0294f9710c317270714e"
+            url: "https://github.com/twilio/conversations-ios/releases/download/v4.0.4/twilio-conversations-ios-4.0.4.zip",
+            checksum: "1618f23905fa14a6e028e86b3521d0537a91af7664efc2061d8ea536c80154dd"
         ),
     ]
 )
