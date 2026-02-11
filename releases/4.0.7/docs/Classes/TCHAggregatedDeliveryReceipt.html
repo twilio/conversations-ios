@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TCHAggregatedDeliveryReceipt Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Twilio Conversations Client </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Twilio</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/delivered">delivered</option>
+		
+		<option value="//api/name/failed">failed</option>
+		
+		<option value="//api/name/read">read</option>
+		
+		<option value="//api/name/sent">sent</option>
+		
+		<option value="//api/name/total">total</option>
+		
+		<option value="//api/name/undelivered">undelivered</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TCHAggregatedDeliveryReceipt Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TCHAggregatedDeliveryReceipt.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Contains aggregated information about a TCHMessage&rsquo;s delivery statuses across all participants
+of a <a href="../Classes/TCHConversation.html">TCHConversation</a>.</p>
+
+<p>At any moment during delivering message to a <a href="../Classes/TCHParticipant.html">TCHParticipant</a> the message can have zero or more of following
+delivery statuses:</p>
+
+<p>Message considered as <b>sent</b> to a participant, if the nearest upstream carrier accepted the message.</p>
+
+<p>Message considered as <b>delivered</b> to a participant, if Twilio has received confirmation of message
+delivery from the upstream carrier, and, where available, the destination handset.</p>
+
+<p>Message considered as <b>undelivered</b> to a participant, if Twilio has received a delivery receipt
+indicating that the message was not <a href="#//api/name/delivered">delivered</a>. This can happen for many reasons including carrier content
+filtering and the availability of the destination handset.</p>
+
+<p>Message considered as <b>read</b> by a participant, if the message has been <a href="#//api/name/delivered">delivered</a> and opened by the
+recipient in the conversation. The recipient must have enabled <a href="#//api/name/read">read</a> receipts.</p>
+
+<p>Message considered as <b>failed</b> to be <a href="#//api/name/delivered">delivered</a> to a participant if the message could not be <a href="#//api/name/sent">sent</a>.
+This can happen for various reasons including queue overflows, account suspensions and media
+errors (in the case of MMS for instance).</p>
+
+<p>TCHAggregatedDeliveryReceipt class contains aggregated value <a href="../Constants/TCHDeliveryAmount.html">TCHDeliveryAmount</a> for each delivery status.
+The <a href="../Constants/TCHDeliveryAmount.html">TCHDeliveryAmount</a> displays amount of participants which have the status for the message.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/total" title="total"></a>
+	<h3 class="method-title"><code><a href="#//api/name/total">&nbsp;&nbsp;total</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Maximum number of delivery events expected for the message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) NSInteger total</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Maximum number of delivery events expected for the message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHAggregatedDeliveryReceipt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sent" title="sent"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sent">&nbsp;&nbsp;sent</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Message considered as <b>sent</b> to a participant, if the nearest upstream carrier accepted the message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) TCHDeliveryAmount sent</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Message considered as <b>sent</b> to a participant, if the nearest upstream carrier accepted the message.</p>
+
+<p><a href="../Constants/TCHDeliveryAmount.html">TCHDeliveryAmount</a> of participants that have <b>sent</b> delivery status for the message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHAggregatedDeliveryReceipt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delivered" title="delivered"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delivered">&nbsp;&nbsp;delivered</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Message considered as <b>delivered</b> to a participant, if Twilio has received confirmation of message
+delivery from the upstream carrier, and, where available, the destination handset.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) TCHDeliveryAmount delivered</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Message considered as <b>delivered</b> to a participant, if Twilio has received confirmation of message
+delivery from the upstream carrier, and, where available, the destination handset.</p>
+
+<p><a href="../Constants/TCHDeliveryAmount.html">TCHDeliveryAmount</a> of participants that have <b>delivered</b> delivery status for the message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHAggregatedDeliveryReceipt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/undelivered" title="undelivered"></a>
+	<h3 class="method-title"><code><a href="#//api/name/undelivered">&nbsp;&nbsp;undelivered</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Message considered as <b>undelivered</b> to a participant, if Twilio has received a delivery receipt
+indicating that the message was not <a href="#//api/name/delivered">delivered</a>. This can happen for many reasons including carrier content
+filtering and the availability of the destination handset.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) TCHDeliveryAmount undelivered</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Message considered as <b>undelivered</b> to a participant, if Twilio has received a delivery receipt
+indicating that the message was not <a href="#//api/name/delivered">delivered</a>. This can happen for many reasons including carrier content
+filtering and the availability of the destination handset.</p>
+
+<p><a href="../Constants/TCHDeliveryAmount.html">TCHDeliveryAmount</a> of participants that have <b>undelivered</b> delivery status for the message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHAggregatedDeliveryReceipt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/read" title="read"></a>
+	<h3 class="method-title"><code><a href="#//api/name/read">&nbsp;&nbsp;read</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Message considered as <b>read</b> by a participant, if the message has been <a href="#//api/name/delivered">delivered</a> and opened by the
+recipient in the conversation. The recipient must have enabled read receipts.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) TCHDeliveryAmount read</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Message considered as <b>read</b> by a participant, if the message has been <a href="#//api/name/delivered">delivered</a> and opened by the
+recipient in the conversation. The recipient must have enabled read receipts.</p>
+
+<p><a href="../Constants/TCHDeliveryAmount.html">TCHDeliveryAmount</a> of participants that have <b>read</b> delivery status for the message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHAggregatedDeliveryReceipt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/failed" title="failed"></a>
+	<h3 class="method-title"><code><a href="#//api/name/failed">&nbsp;&nbsp;failed</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Message considered as <b>failed</b> to be <a href="#//api/name/delivered">delivered</a> to a participant if the message could not be <a href="#//api/name/sent">sent</a>.
+This can happen for various reasons including queue overflows, account suspensions and media
+errors (in the case of MMS for instance). Twilio does not charge you for failed messages.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) TCHDeliveryAmount failed</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Message considered as <b>failed</b> to be <a href="#//api/name/delivered">delivered</a> to a participant if the message could not be <a href="#//api/name/sent">sent</a>.
+This can happen for various reasons including queue overflows, account suspensions and media
+errors (in the case of MMS for instance). Twilio does not charge you for failed messages.</p>
+
+<p><a href="../Constants/TCHDeliveryAmount.html">TCHDeliveryAmount</a> of participants that have <b>failed</b> delivery status for the message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHAggregatedDeliveryReceipt.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2026 Twilio. All rights reserved. Updated: 2026-02-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TCHDeliveryStatus Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Twilio Conversations Client </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Twilio</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TCHDeliveryStatus Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>TCHDetailedDeliveryReceipt.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">TCHDeliveryStatus</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>Enumeration indicating the delivery status of a message.</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSUInteger, TCHDeliveryStatus ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">TCHDeliveryStatusRead</a> = 0,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TCHDeliveryStatusUndelivered</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TCHDeliveryStatusDelivered</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TCHDeliveryStatusFailed</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TCHDeliveryStatusSent</a>,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TCHDeliveryStatusQueued</a>,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="TCHDeliveryStatusRead"></a><code>TCHDeliveryStatusRead</code></dt>
+<dd>
+
+
+<p>Message considered as <b>read</b> by a participant, if the message has been delivered and opened by the recipient in the conversation. The recipient must have enabled read receipts.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TCHDetailedDeliveryReceipt.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TCHDeliveryStatusUndelivered"></a><code>TCHDeliveryStatusUndelivered</code></dt>
+<dd>
+
+
+<p>Message considered as <b>undelivered</b> to a participant, if Twilio has received a delivery receipt indicating that the message was not delivered. This can happen for many reasons including carrier content filtering and the availability of the destination handset.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TCHDetailedDeliveryReceipt.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TCHDeliveryStatusDelivered"></a><code>TCHDeliveryStatusDelivered</code></dt>
+<dd>
+
+
+<p>Message considered as <b>delivered</b> to a participant, if Twilio has received confirmation of message delivery from the upstream carrier, and, where available, the destination handset.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TCHDetailedDeliveryReceipt.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TCHDeliveryStatusFailed"></a><code>TCHDeliveryStatusFailed</code></dt>
+<dd>
+
+
+<p>Message considered as <b>failed</b> to be delivered to a participant if the message could not be sent. This can happen for various reasons including queue overflows, account suspensions and media errors (in the case of MMS for instance).</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TCHDetailedDeliveryReceipt.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TCHDeliveryStatusSent"></a><code>TCHDeliveryStatusSent</code></dt>
+<dd>
+
+
+<p>Message considered as <b>sent</b> to a participant, if the nearest upstream carrier accepted the message.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TCHDetailedDeliveryReceipt.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TCHDeliveryStatusQueued"></a><code>TCHDeliveryStatusQueued</code></dt>
+<dd>
+
+
+<p>Message considered as <b>queued</b>, if it is waiting in a queue to be sent to an upstream carrier.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TCHDetailedDeliveryReceipt.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">TCHDetailedDeliveryReceipt.h</code></p>
+                    </div>
+                    
+                    
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2026 Twilio. All rights reserved. Updated: 2026-02-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

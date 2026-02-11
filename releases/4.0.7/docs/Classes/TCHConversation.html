@@ -1,0 +1,2955 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TCHConversation Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Twilio Conversations Client </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Twilio</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/createdBy">createdBy</option>
+		
+		<option value="//api/name/dateCreated">dateCreated</option>
+		
+		<option value="//api/name/dateCreatedAsDate">dateCreatedAsDate</option>
+		
+		<option value="//api/name/dateUpdated">dateUpdated</option>
+		
+		<option value="//api/name/dateUpdatedAsDate">dateUpdatedAsDate</option>
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/friendlyName">friendlyName</option>
+		
+		<option value="//api/name/lastMessageDate">lastMessageDate</option>
+		
+		<option value="//api/name/lastMessageIndex">lastMessageIndex</option>
+		
+		<option value="//api/name/lastReadMessageIndex">lastReadMessageIndex</option>
+		
+		<option value="//api/name/limits">limits</option>
+		
+		<option value="//api/name/notificationLevel">notificationLevel</option>
+		
+		<option value="//api/name/sid">sid</option>
+		
+		<option value="//api/name/state">state</option>
+		
+		<option value="//api/name/stateDateUpdatedAsDate">stateDateUpdatedAsDate</option>
+		
+		<option value="//api/name/status">status</option>
+		
+		<option value="//api/name/synchronizationStatus">synchronizationStatus</option>
+		
+		<option value="//api/name/uniqueName">uniqueName</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addParticipantByAddress:proxyAddress:attributes:completion:">- addParticipantByAddress:proxyAddress:attributes:completion:</option>
+		
+		<option value="//api/name/addParticipantByIdentity:attributes:completion:">- addParticipantByIdentity:attributes:completion:</option>
+		
+		<option value="//api/name/advanceLastReadMessageIndex:completion:">- advanceLastReadMessageIndex:completion:</option>
+		
+		<option value="//api/name/attributes">- attributes</option>
+		
+		<option value="//api/name/destroyWithCompletion:">- destroyWithCompletion:</option>
+		
+		<option value="//api/name/getLastMessagesWithCount:completion:">- getLastMessagesWithCount:completion:</option>
+		
+		<option value="//api/name/getMessagesAfter:withCount:completion:">- getMessagesAfter:withCount:completion:</option>
+		
+		<option value="//api/name/getMessagesBefore:withCount:completion:">- getMessagesBefore:withCount:completion:</option>
+		
+		<option value="//api/name/getMessagesCountWithCompletion:">- getMessagesCountWithCompletion:</option>
+		
+		<option value="//api/name/getParticipantsCountWithCompletion:">- getParticipantsCountWithCompletion:</option>
+		
+		<option value="//api/name/getUnreadMessagesCountWithCompletion:">- getUnreadMessagesCountWithCompletion:</option>
+		
+		<option value="//api/name/joinWithCompletion:">- joinWithCompletion:</option>
+		
+		<option value="//api/name/leaveWithCompletion:">- leaveWithCompletion:</option>
+		
+		<option value="//api/name/messageForReadIndex:completion:">- messageForReadIndex:completion:</option>
+		
+		<option value="//api/name/messageWithIndex:completion:">- messageWithIndex:completion:</option>
+		
+		<option value="//api/name/participantWithIdentity:">- participantWithIdentity:</option>
+		
+		<option value="//api/name/participantWithSid:">- participantWithSid:</option>
+		
+		<option value="//api/name/participants">- participants</option>
+		
+		<option value="//api/name/prepareMessage">- prepareMessage</option>
+		
+		<option value="//api/name/removeMessage:completion:">- removeMessage:completion:</option>
+		
+		<option value="//api/name/removeParticipant:completion:">- removeParticipant:completion:</option>
+		
+		<option value="//api/name/removeParticipantByIdentity:completion:">- removeParticipantByIdentity:completion:</option>
+		
+		<option value="//api/name/setAllMessagesReadWithCompletion:">- setAllMessagesReadWithCompletion:</option>
+		
+		<option value="//api/name/setAllMessagesUnreadWithCompletion:">- setAllMessagesUnreadWithCompletion:</option>
+		
+		<option value="//api/name/setAttributes:completion:">- setAttributes:completion:</option>
+		
+		<option value="//api/name/setFriendlyName:completion:">- setFriendlyName:completion:</option>
+		
+		<option value="//api/name/setLastReadMessageIndex:completion:">- setLastReadMessageIndex:completion:</option>
+		
+		<option value="//api/name/setNotificationLevel:completion:">- setNotificationLevel:completion:</option>
+		
+		<option value="//api/name/setUniqueName:completion:">- setUniqueName:completion:</option>
+		
+		<option value="//api/name/typing">- typing</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TCHConversation Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TCHConversation.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Representation of a conversations conversation.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Optional conversation delegate.  Upon setting the delegate, you will receive the current conversation synchronization <a href="#//api/name/status">status</a> by delegate method.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak, nullable) id&lt;TCHConversationDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Optional conversation delegate.  Upon setting the delegate, you will receive the current conversation synchronization <a href="#//api/name/status">status</a> by delegate method.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sid" title="sid"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sid">&nbsp;&nbsp;sid</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The unique identifier for this conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly, nullable) NSString *sid</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The unique identifier for this conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/friendlyName" title="friendlyName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/friendlyName">&nbsp;&nbsp;friendlyName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The friendly name for this conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly, nullable) NSString *friendlyName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The friendly name for this conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/uniqueName" title="uniqueName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/uniqueName">&nbsp;&nbsp;uniqueName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The unique name for this conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly, nullable) NSString *uniqueName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The unique name for this conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notificationLevel" title="notificationLevel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notificationLevel">&nbsp;&nbsp;notificationLevel</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current user&rsquo;s notification level on this conversation. This property reflects whether the
+user will receive push notifications for activity on this conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) TCHConversationNotificationLevel notificationLevel</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The current user&rsquo;s notification level on this conversation. This property reflects whether the
+user will receive push notifications for activity on this conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/synchronizationStatus" title="synchronizationStatus"></a>
+	<h3 class="method-title"><code><a href="#//api/name/synchronizationStatus">&nbsp;&nbsp;synchronizationStatus</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The conversation&rsquo;s synchronization <a href="#//api/name/status">status</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) TCHConversationSynchronizationStatus synchronizationStatus</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The conversation&rsquo;s synchronization <a href="#//api/name/status">status</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/status" title="status"></a>
+	<h3 class="method-title"><code><a href="#//api/name/status">&nbsp;&nbsp;status</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current user&rsquo;s status on this conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) TCHConversationStatus status</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The current user&rsquo;s status on this conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/state" title="state"></a>
+	<h3 class="method-title"><code><a href="#//api/name/state">&nbsp;&nbsp;state</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current state for this conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) TCHConversationState state</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The current state for this conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stateDateUpdatedAsDate" title="stateDateUpdatedAsDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stateDateUpdatedAsDate">&nbsp;&nbsp;stateDateUpdatedAsDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The date when <a href="../Constants/TCHConversationState.html">TCHConversationState</a> was last updated.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nullable) NSDate *stateDateUpdatedAsDate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The date when <a href="../Constants/TCHConversationState.html">TCHConversationState</a> was last updated.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createdBy" title="createdBy"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createdBy">&nbsp;&nbsp;createdBy</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The identity of the conversation&rsquo;s creator.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly, nullable) NSString *createdBy</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The identity of the conversation&rsquo;s creator.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dateCreated" title="dateCreated"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dateCreated">&nbsp;&nbsp;dateCreated</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The conversation creation date.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly, nullable) NSString *dateCreated</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The conversation creation date.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dateCreatedAsDate" title="dateCreatedAsDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dateCreatedAsDate">&nbsp;&nbsp;dateCreatedAsDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The conversation creation date as an NSDate.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly, nullable) NSDate *dateCreatedAsDate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The conversation creation date as an NSDate.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dateUpdated" title="dateUpdated"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dateUpdated">&nbsp;&nbsp;dateUpdated</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The timestamp the conversation was last updated.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly, nullable) NSString *dateUpdated</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The timestamp the conversation was last updated.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dateUpdatedAsDate" title="dateUpdatedAsDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dateUpdatedAsDate">&nbsp;&nbsp;dateUpdatedAsDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The timestamp the conversation was last updated as an NSDate.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly, nullable) NSDate *dateUpdatedAsDate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The timestamp the conversation was last updated as an NSDate.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lastMessageDate" title="lastMessageDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lastMessageDate">&nbsp;&nbsp;lastMessageDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The timestamp of the conversation&rsquo;s most recent message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly, nullable) NSDate *lastMessageDate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The timestamp of the conversation&rsquo;s most recent message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lastMessageIndex" title="lastMessageIndex"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lastMessageIndex">&nbsp;&nbsp;lastMessageIndex</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The index of the conversation&rsquo;s most recent message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly, nullable) NSNumber *lastMessageIndex</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The index of the conversation&rsquo;s most recent message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lastReadMessageIndex" title="lastReadMessageIndex"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lastReadMessageIndex">&nbsp;&nbsp;lastReadMessageIndex</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Index of the last Message the User has marked as read in this Conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, readonly, nullable) NSNumber *lastReadMessageIndex</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Index of the last Message the User has marked as read in this Conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/limits" title="limits"></a>
+	<h3 class="method-title"><code><a href="#//api/name/limits">&nbsp;&nbsp;limits</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Limits for attachments per each message in the conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, nonnull) TCHConversationLimits *limits</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Limits for attachments per each message in the conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/attributes" title="attributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/attributes">&ndash;&nbsp;attributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Return this conversation&rsquo;s attributes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable TCHJsonAttributes *)attributes</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The developer-defined extensible attributes for this conversation.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Return this conversation&rsquo;s attributes.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAttributes:completion:" title="setAttributes:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAttributes:completion:">&ndash;&nbsp;setAttributes:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set this conversation&rsquo;s <a href="#//api/name/attributes">attributes</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setAttributes:(nullable TCHJsonAttributes *)<em>attributes</em> completion:(nullable TCHCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attributes</code></th>
+						<td><p>The new developer-defined extensible <a href="#//api/name/attributes">attributes</a> for this conversation. (Supported types are NSString, NSNumber, NSArray, NSDictionary and NSNull)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set this conversation&rsquo;s <a href="#//api/name/attributes">attributes</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setFriendlyName:completion:" title="setFriendlyName:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setFriendlyName:completion:">&ndash;&nbsp;setFriendlyName:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set this conversation&rsquo;s friendly name.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setFriendlyName:(nullable NSString *)<em>friendlyName</em> completion:(nullable TCHCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>friendlyName</code></th>
+						<td><p>The new friendly name for this conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set this conversation&rsquo;s friendly name.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setUniqueName:completion:" title="setUniqueName:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setUniqueName:completion:">&ndash;&nbsp;setUniqueName:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set this conversation&rsquo;s unique name.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setUniqueName:(nullable NSString *)<em>uniqueName</em> completion:(nullable TCHCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uniqueName</code></th>
+						<td><p>The new unique name for this conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set this conversation&rsquo;s unique name.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setNotificationLevel:completion:" title="setNotificationLevel:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setNotificationLevel:completion:">&ndash;&nbsp;setNotificationLevel:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the user&rsquo;s notification level for the conversation.  This property determines whether the
+user will receive push notifications for activity on this conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setNotificationLevel:(TCHConversationNotificationLevel)<em>notificationLevel</em> completion:(nullable TCHCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>notificationLevel</code></th>
+						<td><p>The new notification level for the current user on this conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the user&rsquo;s notification level for the conversation.  This property determines whether the
+user will receive push notifications for activity on this conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/joinWithCompletion:" title="joinWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/joinWithCompletion:">&ndash;&nbsp;joinWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Join the current user to this conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)joinWithCompletion:(nullable TCHCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Join the current user to this conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/leaveWithCompletion:" title="leaveWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/leaveWithCompletion:">&ndash;&nbsp;leaveWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Leave the current conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)leaveWithCompletion:(nullable TCHCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Leave the current conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/destroyWithCompletion:" title="destroyWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/destroyWithCompletion:">&ndash;&nbsp;destroyWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Destroy the current conversation, removing all of its <a href="#//api/name/participants">participants</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)destroyWithCompletion:(nullable TCHCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Destroy the current conversation, removing all of its <a href="#//api/name/participants">participants</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/typing" title="typing"></a>
+	<h3 class="method-title"><code><a href="#//api/name/typing">&ndash;&nbsp;typing</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates to other users and the backend that the user is typing a message to this conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)typing</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates to other users and the backend that the user is typing a message to this conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/prepareMessage" title="prepareMessage"></a>
+	<h3 class="method-title"><code><a href="#//api/name/prepareMessage">&ndash;&nbsp;prepareMessage</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Prepares a new message to send into the conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull TCHMessageBuilder *)prepareMessage</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The message builder for building a new message and sending it into the conversation.</p>
+
+<p>Example of usage:
+@code
+conversation.prepareMessage()
+    .setBody(&ldquo;message body&rdquo;)
+    .addMedia(mediaData, &ldquo;image/jpeg&rdquo;, &ldquo;filename.jpg&rdquo;, .init(onStarted: {
+        print(&ldquo;Media upload started&rdquo;)
+    } onProgress: { bytesSent in
+        print(&ldquo;Current progress (bytesSent)&rdquo;)
+    } onCompleted: { mediaSid in
+        print(&ldquo;Media uploaded with <a href="#//api/name/sid">sid</a> (mediaSid)&rdquo;)
+    } onFailed: { error in
+        print(&ldquo;Media upload failed with error (error)&rdquo;)
+    }))
+    .buildAndSend { result, message in
+        print(&ldquo;Message sent with result (result)&rdquo;)
+    }
+@endcode</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Prepares a new message to send into the conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeMessage:completion:" title="removeMessage:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeMessage:completion:">&ndash;&nbsp;removeMessage:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes the specified message from the conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeMessage:(nonnull TCHMessage *)<em>message</em> completion:(nullable TCHCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The message to remove.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Removes the specified message from the conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLastMessagesWithCount:completion:" title="getLastMessagesWithCount:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLastMessagesWithCount:completion:">&ndash;&nbsp;getLastMessagesWithCount:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches the most recent <code>count</code> messages.  This will return locally cached messages if they are all available or may require a load from the server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getLastMessagesWithCount:(NSUInteger)<em>count</em> completion:(nonnull TCHMessagesCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>count</code></th>
+						<td><p>The number of most recent messages to return.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation as well as the requested messages if successful.  If no completion block is specified, no operation will be executed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Fetches the most recent <code>count</code> messages.  This will return locally cached messages if they are all available or may require a load from the server.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMessagesBefore:withCount:completion:" title="getMessagesBefore:withCount:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMessagesBefore:withCount:completion:">&ndash;&nbsp;getMessagesBefore:withCount:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches at most <code>count</code> messages including and prior to the specified <code>index</code>.  This will return locally cached messages if they are all available or may require a load from the server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMessagesBefore:(NSUInteger)<em>index</em> withCount:(NSUInteger)<em>count</em> completion:(nonnull TCHMessagesCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>index</code></th>
+						<td><p>The starting point for the request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>count</code></th>
+						<td><p>The number of preceding messages to return.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation as well as the requested messages if successful.  If no completion block is specified, no operation will be executed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Fetches at most <code>count</code> messages including and prior to the specified <code>index</code>.  This will return locally cached messages if they are all available or may require a load from the server.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMessagesAfter:withCount:completion:" title="getMessagesAfter:withCount:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMessagesAfter:withCount:completion:">&ndash;&nbsp;getMessagesAfter:withCount:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetches at most <code>count</code> messages including and subsequent to the specified <code>index</code>.  This will return locally cached messages if they are all available or may require a load from the server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMessagesAfter:(NSUInteger)<em>index</em> withCount:(NSUInteger)<em>count</em> completion:(nonnull TCHMessagesCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>index</code></th>
+						<td><p>The starting point for the request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>count</code></th>
+						<td><p>The number of succeeding messages to return.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation as well as the requested messages if successful.  If no completion block is specified, no operation will be executed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Fetches at most <code>count</code> messages including and subsequent to the specified <code>index</code>.  This will return locally cached messages if they are all available or may require a load from the server.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/messageWithIndex:completion:" title="messageWithIndex:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/messageWithIndex:completion:">&ndash;&nbsp;messageWithIndex:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the message with the specified index.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)messageWithIndex:(nonnull NSNumber *)<em>index</em> completion:(nonnull TCHMessageCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>index</code></th>
+						<td><p>The index of the message.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation as well as the requested message if successful.  If no completion block is specified, no operation will be executed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the message with the specified index.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/messageForReadIndex:completion:" title="messageForReadIndex:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/messageForReadIndex:completion:">&ndash;&nbsp;messageForReadIndex:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the oldest message starting at index.  If the message at index does not exist, the next message will be returned.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)messageForReadIndex:(nonnull NSNumber *)<em>index</em> completion:(nonnull TCHMessageCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>index</code></th>
+						<td><p>The index of the last message reported as read (may refer to a deleted message).</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation as well as the requested message if successful.  If no completion block is specified, no operation will be executed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the oldest message starting at index.  If the message at index does not exist, the next message will be returned.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLastReadMessageIndex:completion:" title="setLastReadMessageIndex:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLastReadMessageIndex:completion:">&ndash;&nbsp;setLastReadMessageIndex:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the last read index for this Participant and Conversation.  Allows you to set any value, including smaller than the current index.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setLastReadMessageIndex:(nonnull NSNumber *)<em>index</em> completion:(nullable TCHCountCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>index</code></th>
+						<td><p>The new index.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Optional completion block that will specify the result of the operation and an updated unread message count for the user on this conversation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the last read index for this Participant and Conversation.  Allows you to set any value, including smaller than the current index.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/advanceLastReadMessageIndex:completion:" title="advanceLastReadMessageIndex:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/advanceLastReadMessageIndex:completion:">&ndash;&nbsp;advanceLastReadMessageIndex:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update the last read index for this Participant and Conversation.  Only update the index if the value specified is larger than the previous value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)advanceLastReadMessageIndex:(nonnull NSNumber *)<em>index</em> completion:(nullable TCHCountCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>index</code></th>
+						<td><p>The new index.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Optional completion block that will specify the result of the operation and an updated unread message count for the user on this conversation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Update the last read index for this Participant and Conversation.  Only update the index if the value specified is larger than the previous value.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAllMessagesReadWithCompletion:" title="setAllMessagesReadWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAllMessagesReadWithCompletion:">&ndash;&nbsp;setAllMessagesReadWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update the last read index for this Participant and Conversation to the max message currently on this device.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setAllMessagesReadWithCompletion:(nullable TCHCountCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Optional completion block that will specify the result of the operation and an updated unread message count for the user on this conversation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Update the last read index for this Participant and Conversation to the max message currently on this device.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAllMessagesUnreadWithCompletion:" title="setAllMessagesUnreadWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAllMessagesUnreadWithCompletion:">&ndash;&nbsp;setAllMessagesUnreadWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Reset the last read index for this Participant and Conversation to no messages read.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setAllMessagesUnreadWithCompletion:(nullable TCHNullableCountCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Optional completion block that will specify the result of the operation and an updated unread message count for the user on this conversation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Reset the last read index for this Participant and Conversation to no messages read.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUnreadMessagesCountWithCompletion:" title="getUnreadMessagesCountWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUnreadMessagesCountWithCompletion:">&ndash;&nbsp;getUnreadMessagesCountWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch the number of unread messages on this conversation for the current user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getUnreadMessagesCountWithCompletion:(nonnull TCHNullableCountCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the requested count.  If no completion block is specified, no operation will be executed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Fetch the number of unread messages on this conversation for the current user.</p>
+
+<p>Use this method to obtain number of unread messages together with
+<a href="#//api/name/setLastReadMessageIndex:completion:">[TCHConversation setLastReadMessageIndex:completion:]</a> instead of relying on
+TCHMessage indices which may have gaps. See <a href="../Classes/TCHMessage.html#//api/name/index">[TCHMessage index]</a> for details.</p>
+
+<p>Available even if the conversation is not yet synchronized.</p>
+
+<p>Note: if the last read index has not been yet set for current user as the participant of this conversation
+then unread messages count is considered uninitialized. In this case nil is returned.
+See <a href="#//api/name/setLastReadMessageIndex:completion:">[TCHConversation setLastReadMessageIndex:completion:]</a>.</p>
+
+<p>This method is semi-realtime. This means that this data will be eventually correct,
+but will also possibly be incorrect for a few seconds. The Conversations system does not
+provide real time events for counter values changes.</p>
+
+<p>So this is quite useful for any “unread messages count” badges, but is not recommended
+to build any core application logic based on these counters being accurate in real time.
+This function performs an async call to service to obtain up-to-date message count.</p>
+
+<p>The retrieved value is then cached for 5 seconds so there is no reason to call this
+function more often than once in 5 seconds.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMessagesCountWithCompletion:" title="getMessagesCountWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMessagesCountWithCompletion:">&ndash;&nbsp;getMessagesCountWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch the number of messages on this conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMessagesCountWithCompletion:(nonnull TCHCountCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the requested count.  If no completion block is specified, no operation will be executed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Fetch the number of messages on this conversation.</p>
+
+<p>Available even if the conversation is not yet synchronized.</p>
+
+<p>This method is semi-realtime. This means that this data will be eventually correct,
+but will also possibly be incorrect for a few seconds. The Conversations system does not
+provide real time events for counter values changes.</p>
+
+<p>So this is quite useful for any UI badges, but is not recommended
+to build any core application logic based on these counters being accurate in real time.
+This function performs an async call to service to obtain up-to-date message count.</p>
+
+<p>The retrieved value is then cached for 5 seconds so there is no reason to call this
+function more often than once in 5 seconds.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getParticipantsCountWithCompletion:" title="getParticipantsCountWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getParticipantsCountWithCompletion:">&ndash;&nbsp;getParticipantsCountWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch the number of <a href="#//api/name/participants">participants</a> on this conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getParticipantsCountWithCompletion:(nonnull TCHCountCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the requested count.  If no completion block is specified, no operation will be executed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Fetch the number of <a href="#//api/name/participants">participants</a> on this conversation.</p>
+
+<p>Available even if the conversation is not yet synchronized.</p>
+
+<p>This method is semi-realtime. This means that this data will be eventually correct,
+but will also possibly be incorrect for a few seconds. The Conversations system does not
+provide real time events for counter values changes.</p>
+
+<p>So this is quite useful for any UI badges, but is not recommended
+to build any core application logic based on these counters being accurate in real time.
+This function performs an async call to service to obtain up-to-date message count.</p>
+
+<p>The retrieved value is then cached for 5 seconds so there is no reason to call this
+function more often than once in 5 seconds.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/participants" title="participants"></a>
+	<h3 class="method-title"><code><a href="#//api/name/participants">&ndash;&nbsp;participants</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Obtain the participants of this conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nonnull NSArray&lt;TCHParticipant*&gt; *)participants</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Obtain the participants of this conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addParticipantByIdentity:attributes:completion:" title="addParticipantByIdentity:attributes:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addParticipantByIdentity:attributes:completion:">&ndash;&nbsp;addParticipantByIdentity:attributes:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add specified username to this conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addParticipantByIdentity:(nonnull NSString *)<em>identity</em> attributes:(nullable TCHJsonAttributes *)<em>attributes</em> completion:(nullable TCHCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identity</code></th>
+						<td><p>The username to add to this conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attributes</code></th>
+						<td><p>The developer-defined extensible <a href="#//api/name/attributes">attributes</a> for participant or nil to use default empty <a href="#//api/name/attributes">attributes</a>. (Supported types are NSString, NSNumber, NSArray, NSDictionary and NSNull)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Add specified username to this conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addParticipantByAddress:proxyAddress:attributes:completion:" title="addParticipantByAddress:proxyAddress:attributes:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addParticipantByAddress:proxyAddress:attributes:completion:">&ndash;&nbsp;addParticipantByAddress:proxyAddress:attributes:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Add specified non chat participant to this conversation, i.e. sms, whatsapp <a href="#//api/name/participants">participants</a> etc.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addParticipantByAddress:(nonnull NSString *)<em>address</em> proxyAddress:(nonnull NSString *)<em>proxyAddress</em> attributes:(nullable TCHJsonAttributes *)<em>attributes</em> completion:(nullable TCHCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>address</code></th>
+						<td><p>The participant address to add to this conversation (phone number for sms and whatsapp <a href="#//api/name/participants">participants</a>)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>proxyAddress</code></th>
+						<td><p>Proxy address (Twilio phone number for sms and whatsapp participants).
+See conversations quickstart for more info: <a href="https://www.twilio.com/docs/conversations/quickstart">https://www.twilio.com/docs/conversations/quickstart</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attributes</code></th>
+						<td><p>The developer-defined extensible <a href="#//api/name/attributes">attributes</a> for participant or nil to use default empty <a href="#//api/name/attributes">attributes</a>. (Supported types are NSString, NSNumber, NSArray, NSDictionary and NSNull)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  Add specified non chat participant to this conversation, i.e. sms, whatsapp <a href="#//api/name/participants">participants</a> etc.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeParticipant:completion:" title="removeParticipant:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeParticipant:completion:">&ndash;&nbsp;removeParticipant:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Remove specified participant from this conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeParticipant:(nonnull TCHParticipant *)<em>participant</em> completion:(nullable TCHCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The participant to remove from this conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Remove specified participant from this conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeParticipantByIdentity:completion:" title="removeParticipantByIdentity:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeParticipantByIdentity:completion:">&ndash;&nbsp;removeParticipantByIdentity:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Remove specified username from this conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeParticipantByIdentity:(nonnull NSString *)<em>identity</em> completion:(nullable TCHCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identity</code></th>
+						<td><p>The username to remove from this conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>Completion block that will specify the result of the operation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Remove specified username from this conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/participantWithIdentity:" title="participantWithIdentity:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/participantWithIdentity:">&ndash;&nbsp;participantWithIdentity:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch the participant object for the given identity if it exists.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable TCHParticipant *)participantWithIdentity:(nonnull NSString *)<em>identity</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identity</code></th>
+						<td><p>The username to fetch.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The <a href="../Classes/TCHParticipant.html">TCHParticipant</a> object, if one exists for the username for this conversation.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Fetch the participant object for the given identity if it exists.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/participantWithSid:" title="participantWithSid:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/participantWithSid:">&ndash;&nbsp;participantWithSid:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch the participant object for the given SID if it exists.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable TCHParticipant *)participantWithSid:(nonnull NSString *)<em>sid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sid</code></th>
+						<td><p>The participant&rsquo;s SID.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The <a href="../Classes/TCHParticipant.html">TCHParticipant</a> object, if one exists for the SID for this conversation.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Fetch the participant object for the given SID if it exists.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2026 Twilio. All rights reserved. Updated: 2026-02-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

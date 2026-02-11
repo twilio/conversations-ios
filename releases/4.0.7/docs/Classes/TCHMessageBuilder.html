@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TCHMessageBuilder Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Twilio Conversations Client </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Twilio</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addMediaWithData:contentType:">- addMediaWithData:contentType:</option>
+		
+		<option value="//api/name/addMediaWithData:contentType:filename:">- addMediaWithData:contentType:filename:</option>
+		
+		<option value="//api/name/addMediaWithData:contentType:filename:listener:">- addMediaWithData:contentType:filename:listener:</option>
+		
+		<option value="//api/name/addMediaWithInputStream:contentType:">- addMediaWithInputStream:contentType:</option>
+		
+		<option value="//api/name/addMediaWithInputStream:contentType:filename:">- addMediaWithInputStream:contentType:filename:</option>
+		
+		<option value="//api/name/addMediaWithInputStream:contentType:filename:listener:">- addMediaWithInputStream:contentType:filename:listener:</option>
+		
+		<option value="//api/name/build">- build</option>
+		
+		<option value="//api/name/buildAndSendWithCompletion:">- buildAndSendWithCompletion:</option>
+		
+		<option value="//api/name/setAttributes:error:">- setAttributes:error:</option>
+		
+		<option value="//api/name/setBody:">- setBody:</option>
+		
+		<option value="//api/name/setContentTemplateWithSid:">- setContentTemplateWithSid:</option>
+		
+		<option value="//api/name/setContentTemplateWithSid:contentTemplateVariables:">- setContentTemplateWithSid:contentTemplateVariables:</option>
+		
+		<option value="//api/name/setEmailBody:contentType:">- setEmailBody:contentType:</option>
+		
+		<option value="//api/name/setEmailBody:contentType:listener:">- setEmailBody:contentType:listener:</option>
+		
+		<option value="//api/name/setEmailBodyWithInputStream:contentType:">- setEmailBodyWithInputStream:contentType:</option>
+		
+		<option value="//api/name/setEmailBodyWithInputStream:contentType:listener:">- setEmailBodyWithInputStream:contentType:listener:</option>
+		
+		<option value="//api/name/setEmailHistory:contentType:">- setEmailHistory:contentType:</option>
+		
+		<option value="//api/name/setEmailHistory:contentType:listener:">- setEmailHistory:contentType:listener:</option>
+		
+		<option value="//api/name/setEmailHistoryWithInputStream:contentType:">- setEmailHistoryWithInputStream:contentType:</option>
+		
+		<option value="//api/name/setEmailHistoryWithInputStream:contentType:listener:">- setEmailHistoryWithInputStream:contentType:listener:</option>
+		
+		<option value="//api/name/setSubject:">- setSubject:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TCHMessageBuilder Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TCHMessageBuilder.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The builder of a message to send later in a conversation.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setBody:" title="setBody:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setBody:">&ndash;&nbsp;setBody:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the new message body.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)setBody:(nullable NSString *)<em>body</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>body</code></th>
+						<td><p>The body for the new message.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the new message body.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setSubject:" title="setSubject:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setSubject:">&ndash;&nbsp;setSubject:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the new message subject.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)setSubject:(nullable NSString *)<em>subject</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>subject</code></th>
+						<td><p>The subject of the message.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the new message subject.</p>
+
+<p>The subject is a part of the message which will be sent to email participants
+of the conversation (if any) as subject field of an email.</p>
+
+<p>If there is no email participants in the conversation - other chat participants will receive this
+field as a part of the message anyway.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAttributes:error:" title="setAttributes:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAttributes:error:">&ndash;&nbsp;setAttributes:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets user defined attributes for the new message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)setAttributes:(nullable TCHJsonAttributes *)<em>attributes</em> error:(TCHError *_Nullable *_Nullable)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attributes</code></th>
+						<td><p>The new developer-defined extensible attributes for this message. (Supported types are NSString, NSNumber, NSArray, NSDictionary and NSNull)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>An error which will indicate the failure of setting the attributes.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A reference to this options object for convenience in chaining or nil in the event the attributes could not be parsed/updated.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets user defined attributes for the new message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setContentTemplateWithSid:" title="setContentTemplateWithSid:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setContentTemplateWithSid:">&ndash;&nbsp;setContentTemplateWithSid:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the message as a templated one. This method uses default variables.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)setContentTemplateWithSid:(nullable NSString *)<em>contentTemplateSid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentTemplateSid</code></th>
+						<td><p>The content template sid. For all available sids take a look at <a href="../Classes/TwilioConversationsClient.html#//api/name/getContentTemplatesWithCompletion:">[TwilioConversationsClient getContentTemplatesWithCompletion:]</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines the message as a templated one. This method uses default variables.</p>
+
+<p>Use [setContentTemplateWithSid:contentVariables:] to specify custom values of variables.</p>
+
+<p>The message will ignore all data provided as a body, subject, and/or media.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setContentTemplateWithSid:contentTemplateVariables:" title="setContentTemplateWithSid:contentTemplateVariables:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setContentTemplateWithSid:contentTemplateVariables:">&ndash;&nbsp;setContentTemplateWithSid:contentTemplateVariables:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the message as a templated one. This method uses default variables.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)setContentTemplateWithSid:(nullable NSString *)<em>contentTemplateSid</em> contentTemplateVariables:(NSArray&lt;TCHContentTemplateVariable*&gt; *)<em>contentTemplateVariables</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentTemplateSid</code></th>
+						<td><p>The content template sid. For all available sids take a look at <a href="../Classes/TwilioConversationsClient.html#//api/name/getContentTemplatesWithCompletion:">[TwilioConversationsClient getContentTemplatesWithCompletion:]</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentTemplateVariables</code></th>
+						<td><p>The array of variables to replace the default values in the template. The content template sid must be set for a non-empty array of variables.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines the message as a templated one. This method uses default variables.</p>
+
+<p>The message will ignore all data provided as a body, subject, and/or media.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addMediaWithInputStream:contentType:" title="addMediaWithInputStream:contentType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addMediaWithInputStream:contentType:">&ndash;&nbsp;addMediaWithInputStream:contentType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds the media attachment for the the new message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)addMediaWithInputStream:(NSInputStream *)<em>inputStream</em> contentType:(NSString *)<em>contentType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inputStream</code></th>
+						<td><p>The content of the attachment.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentType</code></th>
+						<td><p>The type of the attachment.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds the media attachment for the the new message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addMediaWithInputStream:contentType:filename:" title="addMediaWithInputStream:contentType:filename:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addMediaWithInputStream:contentType:filename:">&ndash;&nbsp;addMediaWithInputStream:contentType:filename:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds the media attachment for the the new message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)addMediaWithInputStream:(NSInputStream *)<em>inputStream</em> contentType:(NSString *)<em>contentType</em> filename:(nullable NSString *)<em>filename</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inputStream</code></th>
+						<td><p>The content of the attachment.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentType</code></th>
+						<td><p>The type of the attachment.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>filename</code></th>
+						<td><p>The name of the attachment.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds the media attachment for the the new message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addMediaWithInputStream:contentType:filename:listener:" title="addMediaWithInputStream:contentType:filename:listener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addMediaWithInputStream:contentType:filename:listener:">&ndash;&nbsp;addMediaWithInputStream:contentType:filename:listener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds the media attachment for the the new message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)addMediaWithInputStream:(NSInputStream *)<em>inputStream</em> contentType:(NSString *)<em>contentType</em> filename:(nullable NSString *)<em>filename</em> listener:(nullable TCHMediaMessageListener *)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inputStream</code></th>
+						<td><p>The content of the attachment.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentType</code></th>
+						<td><p>The type of the attachment.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>filename</code></th>
+						<td><p>The name of the attachment.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><p>The listener for monitoring the upload process.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds the media attachment for the the new message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addMediaWithData:contentType:" title="addMediaWithData:contentType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addMediaWithData:contentType:">&ndash;&nbsp;addMediaWithData:contentType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds the media attachment for the the new message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)addMediaWithData:(NSData *)<em>mediaData</em> contentType:(NSString *)<em>contentType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaData</code></th>
+						<td><p>The data of attachment.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentType</code></th>
+						<td><p>The type of the attachment.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds the media attachment for the the new message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addMediaWithData:contentType:filename:" title="addMediaWithData:contentType:filename:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addMediaWithData:contentType:filename:">&ndash;&nbsp;addMediaWithData:contentType:filename:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds the media attachment for the the new message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)addMediaWithData:(NSData *)<em>mediaData</em> contentType:(NSString *)<em>contentType</em> filename:(nullable NSString *)<em>filename</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaData</code></th>
+						<td><p>The data of attachment.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentType</code></th>
+						<td><p>The type of the attachment.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>filename</code></th>
+						<td><p>The name of the attachment.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds the media attachment for the the new message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addMediaWithData:contentType:filename:listener:" title="addMediaWithData:contentType:filename:listener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addMediaWithData:contentType:filename:listener:">&ndash;&nbsp;addMediaWithData:contentType:filename:listener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds the media attachment for the the new message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)addMediaWithData:(NSData *)<em>mediaData</em> contentType:(NSString *)<em>contentType</em> filename:(nullable NSString *)<em>filename</em> listener:(nullable TCHMediaMessageListener *)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mediaData</code></th>
+						<td><p>The data of attachment.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentType</code></th>
+						<td><p>The type of the attachment.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>filename</code></th>
+						<td><p>The name of the attachment.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><p>The listener for monitoring the upload process.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds the media attachment for the the new message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setEmailBody:contentType:" title="setEmailBody:contentType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setEmailBody:contentType:">&ndash;&nbsp;setEmailBody:contentType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the new email body for the new message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)setEmailBody:(nullable NSString *)<em>emailBody</em> contentType:(NSString *)<em>contentType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>emailBody</code></th>
+						<td><p>The content of the email body.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentType</code></th>
+						<td><p>The type of the email body <a href="../Classes/TCHConversationLimits.html#//api/name/emailBodiesAllowedContentTypes">[TCHConversationLimits emailBodiesAllowedContentTypes]</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the new email body for the new message.</p>
+
+<p>This email body will be sent to email participants of the conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setEmailBody:contentType:listener:" title="setEmailBody:contentType:listener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setEmailBody:contentType:listener:">&ndash;&nbsp;setEmailBody:contentType:listener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the new email body for the new message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)setEmailBody:(nullable NSString *)<em>emailBody</em> contentType:(NSString *)<em>contentType</em> listener:(nullable TCHMediaMessageListener *)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>emailBody</code></th>
+						<td><p>The content of the email body.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentType</code></th>
+						<td><p>The type of the email body <a href="../Classes/TCHConversationLimits.html#//api/name/emailBodiesAllowedContentTypes">[TCHConversationLimits emailBodiesAllowedContentTypes]</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><p>The listener of the uploading status of the email body.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the new email body for the new message.</p>
+
+<p>This email body will be sent to email participants of the conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setEmailBodyWithInputStream:contentType:" title="setEmailBodyWithInputStream:contentType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setEmailBodyWithInputStream:contentType:">&ndash;&nbsp;setEmailBodyWithInputStream:contentType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the new email body for the new message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)setEmailBodyWithInputStream:(nullable NSInputStream *)<em>inputStream</em> contentType:(NSString *)<em>contentType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inputStream</code></th>
+						<td><p>The input stream of a data containing the email body.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentType</code></th>
+						<td><p>The type of the email body <a href="../Classes/TCHConversationLimits.html#//api/name/emailBodiesAllowedContentTypes">[TCHConversationLimits emailBodiesAllowedContentTypes]</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the new email body for the new message.</p>
+
+<p>This body will be sent to email participants of the conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setEmailBodyWithInputStream:contentType:listener:" title="setEmailBodyWithInputStream:contentType:listener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setEmailBodyWithInputStream:contentType:listener:">&ndash;&nbsp;setEmailBodyWithInputStream:contentType:listener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the new email body for the new message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)setEmailBodyWithInputStream:(nullable NSInputStream *)<em>inputStream</em> contentType:(NSString *)<em>contentType</em> listener:(nullable TCHMediaMessageListener *)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inputStream</code></th>
+						<td><p>The input stream of a data containing the email body.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentType</code></th>
+						<td><p>The type of the email body <a href="../Classes/TCHConversationLimits.html#//api/name/emailBodiesAllowedContentTypes">[TCHConversationLimits emailBodiesAllowedContentTypes]</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><p>The listener of uploading status of the email body.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the new email body for the new message.</p>
+
+<p>This body will be sent to email participants of the conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setEmailHistory:contentType:" title="setEmailHistory:contentType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setEmailHistory:contentType:">&ndash;&nbsp;setEmailHistory:contentType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the new email history for the new message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)setEmailHistory:(nullable NSString *)<em>emailHistory</em> contentType:(NSString *)<em>contentType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>emailHistory</code></th>
+						<td><p>The content of the email history.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentType</code></th>
+						<td><p>The type of the email history <a href="../Classes/TCHConversationLimits.html#//api/name/emailHistoriesAllowedContentTypes">[TCHConversationLimits emailHistoriesAllowedContentTypes]</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the new email history for the new message.</p>
+
+<p>This email history will be sent to email participants of the conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setEmailHistory:contentType:listener:" title="setEmailHistory:contentType:listener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setEmailHistory:contentType:listener:">&ndash;&nbsp;setEmailHistory:contentType:listener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the new email history for the new message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)setEmailHistory:(nullable NSString *)<em>emailHistory</em> contentType:(NSString *)<em>contentType</em> listener:(nullable TCHMediaMessageListener *)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>emailHistory</code></th>
+						<td><p>The content of the email history.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentType</code></th>
+						<td><p>The type of the email history <a href="../Classes/TCHConversationLimits.html#//api/name/emailHistoriesAllowedContentTypes">[TCHConversationLimits emailHistoriesAllowedContentTypes]</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><p>The listener of the uploading status of the email history.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the new email history for the new message.</p>
+
+<p>This email history will be sent to email participants of the conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setEmailHistoryWithInputStream:contentType:" title="setEmailHistoryWithInputStream:contentType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setEmailHistoryWithInputStream:contentType:">&ndash;&nbsp;setEmailHistoryWithInputStream:contentType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the new email history for the new message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)setEmailHistoryWithInputStream:(nullable NSInputStream *)<em>inputStream</em> contentType:(NSString *)<em>contentType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inputStream</code></th>
+						<td><p>The input stream of a data containing the email history.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentType</code></th>
+						<td><p>The type of the email history <a href="../Classes/TCHConversationLimits.html#//api/name/emailHistoriesAllowedContentTypes">[TCHConversationLimits emailHistoriesAllowedContentTypes]</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the new email history for the new message.</p>
+
+<p>This email history will be sent to email participants of the conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setEmailHistoryWithInputStream:contentType:listener:" title="setEmailHistoryWithInputStream:contentType:listener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setEmailHistoryWithInputStream:contentType:listener:">&ndash;&nbsp;setEmailHistoryWithInputStream:contentType:listener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the new email history for the new message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)setEmailHistoryWithInputStream:(nullable NSInputStream *)<em>inputStream</em> contentType:(NSString *)<em>contentType</em> listener:(nullable TCHMediaMessageListener *)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inputStream</code></th>
+						<td><p>The input stream of a data containing the email history.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentType</code></th>
+						<td><p>The type of the email history <a href="../Classes/TCHConversationLimits.html#//api/name/emailHistoriesAllowedContentTypes">[TCHConversationLimits emailHistoriesAllowedContentTypes]</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><p>The listener of the uploading status of the email history.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Self for chaining.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the new email history for the new message.</p>
+
+<p>This email history will be sent to email participants of the conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/build" title="build"></a>
+	<h3 class="method-title"><code><a href="#//api/name/build">&ndash;&nbsp;build</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Builds the new <a href="../Classes/TCHUnsentMessage.html">TCHUnsentMessage</a> with which you can send the message later.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (TCHUnsentMessage *)build</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The message which is ready to send.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Builds the new <a href="../Classes/TCHUnsentMessage.html">TCHUnsentMessage</a> with which you can send the message later.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/buildAndSendWithCompletion:" title="buildAndSendWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/buildAndSendWithCompletion:">&ndash;&nbsp;buildAndSendWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Builds new <a href="../Classes/TCHUnsentMessage.html">TCHUnsentMessage</a> and sends it immediately.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (TCHCancellationToken *)buildAndSendWithCompletion:(nullable TCHMessageCompletion)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>The completion to report the result of the operation that receives sent <a href="../Classes/TCHMessage.html">TCHMessage</a> object.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Builds new <a href="../Classes/TCHUnsentMessage.html">TCHUnsentMessage</a> and sends it immediately.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHMessageBuilder.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2026 Twilio. All rights reserved. Updated: 2026-02-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

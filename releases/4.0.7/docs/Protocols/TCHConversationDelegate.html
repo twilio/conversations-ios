@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TCHConversationDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Twilio Conversations Client </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Twilio</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/conversationsClient:conversation:message:updated:">- conversationsClient:conversation:message:updated:</option>
+		
+		<option value="//api/name/conversationsClient:conversation:messageAdded:">- conversationsClient:conversation:messageAdded:</option>
+		
+		<option value="//api/name/conversationsClient:conversation:messageDeleted:">- conversationsClient:conversation:messageDeleted:</option>
+		
+		<option value="//api/name/conversationsClient:conversation:participant:updated:">- conversationsClient:conversation:participant:updated:</option>
+		
+		<option value="//api/name/conversationsClient:conversation:participant:user:updated:">- conversationsClient:conversation:participant:user:updated:</option>
+		
+		<option value="//api/name/conversationsClient:conversation:participant:userSubscribed:">- conversationsClient:conversation:participant:userSubscribed:</option>
+		
+		<option value="//api/name/conversationsClient:conversation:participant:userUnsubscribed:">- conversationsClient:conversation:participant:userUnsubscribed:</option>
+		
+		<option value="//api/name/conversationsClient:conversation:participantJoined:">- conversationsClient:conversation:participantJoined:</option>
+		
+		<option value="//api/name/conversationsClient:conversation:participantLeft:">- conversationsClient:conversation:participantLeft:</option>
+		
+		<option value="//api/name/conversationsClient:conversation:synchronizationStatusUpdated:">- conversationsClient:conversation:synchronizationStatusUpdated:</option>
+		
+		<option value="//api/name/conversationsClient:conversation:updated:">- conversationsClient:conversation:updated:</option>
+		
+		<option value="//api/name/conversationsClient:conversationDeleted:">- conversationsClient:conversationDeleted:</option>
+		
+		<option value="//api/name/conversationsClient:typingEndedOnConversation:participant:">- conversationsClient:typingEndedOnConversation:participant:</option>
+		
+		<option value="//api/name/conversationsClient:typingStartedOnConversation:participant:">- conversationsClient:typingStartedOnConversation:participant:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TCHConversationDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TCHConversation.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This protocol declares the conversation delegate methods.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/conversationsClient:conversation:updated:" title="conversationsClient:conversation:updated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/conversationsClient:conversation:updated:">&ndash;&nbsp;conversationsClient:conversation:updated:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when this conversation is changed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)conversationsClient:(nonnull TwilioConversationsClient *)<em>client</em> conversation:(nonnull TCHConversation *)<em>conversation</em> updated:(TCHConversationUpdate)<em>updated</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The conversations client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>updated</code></th>
+						<td><p>An indication of what changed on the conversation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when this conversation is changed.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/conversationsClient:conversationDeleted:" title="conversationsClient:conversationDeleted:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/conversationsClient:conversationDeleted:">&ndash;&nbsp;conversationsClient:conversationDeleted:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when current participant is removed from the conversation or conversation is closed or deleted.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)conversationsClient:(nonnull TwilioConversationsClient *)<em>client</em> conversationDeleted:(nonnull TCHConversation *)<em>conversation</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The conversations client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when current participant is removed from the conversation or conversation is closed or deleted.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/conversationsClient:conversation:synchronizationStatusUpdated:" title="conversationsClient:conversation:synchronizationStatusUpdated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/conversationsClient:conversation:synchronizationStatusUpdated:">&ndash;&nbsp;conversationsClient:conversation:synchronizationStatusUpdated:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the conversation synchronization state is changed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)conversationsClient:(nonnull TwilioConversationsClient *)<em>client</em> conversation:(nonnull TCHConversation *)<em>conversation</em> synchronizationStatusUpdated:(TCHConversationSynchronizationStatus)<em>status</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The conversations client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>status</code></th>
+						<td><p>The current synchronization status of the conversation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when the conversation synchronization state is changed.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/conversationsClient:conversation:participantJoined:" title="conversationsClient:conversation:participantJoined:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/conversationsClient:conversation:participantJoined:">&ndash;&nbsp;conversationsClient:conversation:participantJoined:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when this conversation has a new participant join.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)conversationsClient:(nonnull TwilioConversationsClient *)<em>client</em> conversation:(nonnull TCHConversation *)<em>conversation</em> participantJoined:(nonnull TCHParticipant *)<em>participant</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The conversations client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The participant.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when this conversation has a new participant join.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/conversationsClient:conversation:participant:updated:" title="conversationsClient:conversation:participant:updated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/conversationsClient:conversation:participant:updated:">&ndash;&nbsp;conversationsClient:conversation:participant:updated:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when participant data is modified.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)conversationsClient:(nonnull TwilioConversationsClient *)<em>client</em> conversation:(nonnull TCHConversation *)<em>conversation</em> participant:(nonnull TCHParticipant *)<em>participant</em> updated:(TCHParticipantUpdate)<em>updated</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The conversations client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>updated</code></th>
+						<td><p>An indication of what changed on the participant.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when participant data is modified.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/conversationsClient:conversation:participantLeft:" title="conversationsClient:conversation:participantLeft:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/conversationsClient:conversation:participantLeft:">&ndash;&nbsp;conversationsClient:conversation:participantLeft:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when a participant has left this conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)conversationsClient:(nonnull TwilioConversationsClient *)<em>client</em> conversation:(nonnull TCHConversation *)<em>conversation</em> participantLeft:(nonnull TCHParticipant *)<em>participant</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The conversations client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The participant.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when a participant has left this conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/conversationsClient:conversation:messageAdded:" title="conversationsClient:conversation:messageAdded:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/conversationsClient:conversation:messageAdded:">&ndash;&nbsp;conversationsClient:conversation:messageAdded:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when this conversation receives a new message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)conversationsClient:(nonnull TwilioConversationsClient *)<em>client</em> conversation:(nonnull TCHConversation *)<em>conversation</em> messageAdded:(nonnull TCHMessage *)<em>message</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The conversations client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The message.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when this conversation receives a new message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/conversationsClient:conversation:message:updated:" title="conversationsClient:conversation:message:updated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/conversationsClient:conversation:message:updated:">&ndash;&nbsp;conversationsClient:conversation:message:updated:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when message data is modified.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)conversationsClient:(nonnull TwilioConversationsClient *)<em>client</em> conversation:(nonnull TCHConversation *)<em>conversation</em> message:(nonnull TCHMessage *)<em>message</em> updated:(TCHMessageUpdate)<em>updated</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The conversations client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The message.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>updated</code></th>
+						<td><p>An indication of what changed on the message.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when message data is modified.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/conversationsClient:conversation:messageDeleted:" title="conversationsClient:conversation:messageDeleted:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/conversationsClient:conversation:messageDeleted:">&ndash;&nbsp;conversationsClient:conversation:messageDeleted:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when message is deleted from the conversation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)conversationsClient:(nonnull TwilioConversationsClient *)<em>client</em> conversation:(nonnull TCHConversation *)<em>conversation</em> messageDeleted:(nonnull TCHMessage *)<em>message</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The conversations client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The message.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when message is deleted from the conversation.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/conversationsClient:typingStartedOnConversation:participant:" title="conversationsClient:typingStartedOnConversation:participant:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/conversationsClient:typingStartedOnConversation:participant:">&ndash;&nbsp;conversationsClient:typingStartedOnConversation:participant:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when a participant of a conversation starts typing.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)conversationsClient:(nonnull TwilioConversationsClient *)<em>client</em> typingStartedOnConversation:(nonnull TCHConversation *)<em>conversation</em> participant:(nonnull TCHParticipant *)<em>participant</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The conversations client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The participant.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when a participant of a conversation starts typing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/conversationsClient:typingEndedOnConversation:participant:" title="conversationsClient:typingEndedOnConversation:participant:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/conversationsClient:typingEndedOnConversation:participant:">&ndash;&nbsp;conversationsClient:typingEndedOnConversation:participant:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when a participant of a conversation ends typing.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)conversationsClient:(nonnull TwilioConversationsClient *)<em>client</em> typingEndedOnConversation:(nonnull TCHConversation *)<em>conversation</em> participant:(nonnull TCHParticipant *)<em>participant</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The conversations client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The participant.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when a participant of a conversation ends typing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/conversationsClient:conversation:participant:user:updated:" title="conversationsClient:conversation:participant:user:updated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/conversationsClient:conversation:participant:user:updated:">&ndash;&nbsp;conversationsClient:conversation:participant:user:updated:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when this conversation has a participant&rsquo;s user updated.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)conversationsClient:(nonnull TwilioConversationsClient *)<em>client</em> conversation:(nonnull TCHConversation *)<em>conversation</em> participant:(nonnull TCHParticipant *)<em>participant</em> user:(nonnull TCHUser *)<em>user</em> updated:(TCHUserUpdate)<em>updated</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The conversations client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>The object for changed user.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>updated</code></th>
+						<td><p>An indication of what changed on the user.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when this conversation has a participant&rsquo;s user updated.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/conversationsClient:conversation:participant:userSubscribed:" title="conversationsClient:conversation:participant:userSubscribed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/conversationsClient:conversation:participant:userSubscribed:">&ndash;&nbsp;conversationsClient:conversation:participant:userSubscribed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the user associated with a participant of this conversation is subscribed to.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)conversationsClient:(nonnull TwilioConversationsClient *)<em>client</em> conversation:(nonnull TCHConversation *)<em>conversation</em> participant:(nonnull TCHParticipant *)<em>participant</em> userSubscribed:(nonnull TCHUser *)<em>user</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The conversations client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>The object for subscribed user.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when the user associated with a participant of this conversation is subscribed to.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/conversationsClient:conversation:participant:userUnsubscribed:" title="conversationsClient:conversation:participant:userUnsubscribed:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/conversationsClient:conversation:participant:userUnsubscribed:">&ndash;&nbsp;conversationsClient:conversation:participant:userUnsubscribed:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the user associated with a participant of this conversation is unsubscribed from.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)conversationsClient:(nonnull TwilioConversationsClient *)<em>client</em> conversation:(nonnull TCHConversation *)<em>conversation</em> participant:(nonnull TCHParticipant *)<em>participant</em> userUnsubscribed:(nonnull TCHUser *)<em>user</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>client</code></th>
+						<td><p>The conversations client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conversation</code></th>
+						<td><p>The conversation.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>The object for unsubscribed user.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when the user associated with a participant of this conversation is unsubscribed from.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TCHConversation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2026 Twilio. All rights reserved. Updated: 2026-02-11</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
